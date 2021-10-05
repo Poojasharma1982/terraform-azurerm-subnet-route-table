@@ -1,4 +1,4 @@
-resource "azurerm_route_table" "myroutetable" {
+resource "azurerm_route_table" "myroutetable1" {
   name                = var.routetable-name
   location            = var.routetable-location
   resource_group_name = var.routetable-rg-name
