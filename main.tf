@@ -11,6 +11,6 @@ resource "azurerm_route_table" "myroutetable1" {
   }
 }
 resource "azurerm_subnet_route_table_association" "myroutetable1-association" {
-  subnet_id      = var.routetable1-subnet-id
+  subnet_id      = var.routetable-subnet-id
   route_table_id = azurerm_route_table.myroutetable1.id
 }
