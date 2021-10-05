@@ -1,7 +1,7 @@
 resource "azurerm_route_table" "myroutetable" {
-  name                = "routetable-name"
-  location            = "eastUS2"
-  resource_group_name = azurerm_resource_group.example.name
+  name                = var.routetable-name
+  location            = var.routetable-location
+  resource_group_name = var.routetable-rg-name
 
   route {
     name                   = "example"
