@@ -10,3 +10,7 @@ resource "azurerm_route_table" "myroutetable1" {
     next_hop_in_ip_address = "10.10.1.1"
   }
 }
+resource "azurerm_subnet_route_table_association" "myroutetable1-association" {
+  subnet_id      = var.subnet-id
+  route_table_id = azurerm_route_table.myroutetable1.id
+}
